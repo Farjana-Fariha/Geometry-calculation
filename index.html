@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   
+   <!-- Daisyui -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+   <!-- Google font -->
+
+   <!-- tailwind custom css -->
+   <script>
+      tailwind.config = {
+         theme: {
+            extend: {
+               colors: {
+                  clifford: '#da373d',
+               }
+            }
+         }
+      }
+   </script>
+</head>
+<body class="bg-gray-700 m-4">
+   <header>
+
+   </header>
+   <main class="max-w-[1470px] m-auto">
+    <!-- full container -->
+    <div class="flex">
+           <!-- Items section -->
+           <div class="grid grid-cols-3">
+            <!-- Triangle -->
+            <div class="card w-96 text-white  p-4 shadow-xl m-5 flex-1">
+              <figure><img src="images/triangle.png"></figure>
+              <div class="card-body text-center space-y-3">
+                <h2 class="card-title text-center">Triangle</h2>
+                <p>Area: 0.5 X b X h</p>
+                <p class=" max-w-64 space-x-2">
+                  <input id="triangle-width" class="w-20 h-14 bg-gray-100 text-center rounded-md text-black" type="text" placeholder="b">
+                  <span>cm</span>
+                  <input id="triangle-height" class="w-20 h-14 bg-gray-100 text-center rounded-md text-black" type="text" placeholder="h">
+                  <span>cm</span>
+                </p>
+                <div class="card-actions">
+                  <button onclick="calculateTriangle()" class="btn btn-primary w-full">Calculate</button>
+                </div>
+              </div>
+            </div>
+            <!-- Triangle -->
+            <div class="card w-96 text-white  p-4 shadow-xl m-5 flex-1">
+              <figure><img src="images/triangle.png"></figure>
+              <div class="card-body text-center space-y-3">
+                <h2 class="card-title text-center">Triangle</h2>
+                <p>Area: 0.5 X b X h</p>
+                <p class=" max-w-64 space-x-2">
+                  <input class="w-20 h-14 bg-gray-100 text-center rounded-md" type="text" placeholder="b">
+                  <span>cm</span>
+                  <input class="w-20 h-14 bg-gray-100 text-center rounded-md" type="text" placeholder="h">
+                  <span>cm</span>
+                </p>
+                <div class="card-actions">
+                  <button class="btn btn-primary w-full">Calculate</button>
+                </div>
+              </div>
+            </div>
+            <!-- Triangle -->
+            <div class="card w-96 text-white  p-4 shadow-xl m-5 flex-1">
+              <figure><img src="images/triangle.png"></figure>
+              <div class="card-body text-center space-y-3">
+                <h2 class="card-title text-center">Triangle</h2>
+                <p>Area: 0.5 X b X h</p>
+                <p class=" max-w-64 space-x-2">
+                  <input class="w-20 h-14 bg-gray-100 text-center rounded-md" type="text" placeholder="b">
+                  <span>cm</span>
+                  <input class="w-20 h-14 bg-gray-100 text-center rounded-md" type="text" placeholder="h">
+                  <span>cm</span>
+                </p>
+                <div class="card-actions">
+                  <button class="btn btn-primary w-full">Calculate</button>
+                </div>
+              </div>
+            </div>
+            <!-- Triangle -->
+            <div class="card w-96 text-white  p-4 shadow-xl m-5 flex-1">
+              <figure><img src="images/triangle.png"></figure>
+              <div class="card-body text-center space-y-3">
+                <h2 class="card-title text-center">Triangle</h2>
+                <p>Area: 0.5 X b X h</p>
+                <p class=" max-w-64 space-x-2">
+                  <input class="w-20 h-14 bg-gray-100 text-center rounded-md" type="text" placeholder="b">
+                  <span>cm</span>
+                  <input class="w-20 h-14 bg-gray-100 text-center rounded-md" type="text" placeholder="h">
+                  <span>cm</span>
+                </p>
+                <div class="card-actions">
+                  <button class="btn btn-primary w-full">Calculate</button>
+                </div>
+              </div>
+            </div>
+           </div>
+           
+          <!-- Display Result section -->
+          <div class="result-area max-w-[440px] max-h-[460px] border-2 m-4">
+            <h1 class="text-gray-50 text-2xl font-bold p-4">Area Calculation</h1>
+          </div>
+    </div>
+
+   </main>
+   <footer>
+
+   </footer>
+
+   <!-- all js file -->
+   <script src="js/triangle.js"></script>
+
+   <!-- Tailwind -->
+   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- Font awesome link -->
+   <script src="https://kit.fontawesome.com/ed2489f1af.js" crossorigin="anonymous"></script>
+</body>
+</html>
